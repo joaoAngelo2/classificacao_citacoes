@@ -63,7 +63,7 @@ Cada registro representa um artigo publicado no SBIE, contendo:
 * afiliacoes — Lista de instituições associadas aos autores
 * ano — Ano de publicação
 
-#⚙️ Etapas do Processamento
+# ⚙️ Etapas do Processamento
 ## 1. Limpeza de dados
 
 * Remoção de registros sem resumo.

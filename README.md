@@ -27,9 +27,16 @@ modelo_classificação_citações.py
 │   ├── Universidades mais frequentes
 │   ├── Palavras mais representativas
 ├── Modelagem
-│   ├── Treinamento com SVM (RBF kernel)
+│   ├── Treinamento com SVM 
 │   ├── Avaliação com acurácia
 └── Exportação do dataset final (`df_final.csv`)
+|
+├── Ajustes nos Hiperparâmetros
+|   ├── Ajuste do SVM
+│   ├── Ajustes do Random Forest
+|   ├── Ajustes do MLP 
+│   ├── Ajustes do Decision Tree
+└──  Avaliação dos Modelos.
 ```
 
 #  Requisitos

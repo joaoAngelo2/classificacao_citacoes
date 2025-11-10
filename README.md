@@ -100,7 +100,7 @@ Cada registro representa um artigo publicado no SBIE, contendo:
 
 * Divisão em treino (70%) e teste (30%).
 
-* Modelo: SVM (RBF kernel, C=20, γ=0.1).
+* Modelo: SVM 
 
 Avaliação: Acurácia.
 69.66%

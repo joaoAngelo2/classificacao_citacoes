@@ -1,18 +1,18 @@
-# 🧠 Modelo de Classificação de Citações — SBIE (2001–2024)
+#  Modelo de Classificação de Citações — SBIE (2001–2024)
 
 Este projeto tem como objetivo **analisar e classificar publicações do Simpósio Brasileiro de Informática na Educação (SBIE)** entre os anos de 2001 e 2024, com base em seus **resumos, títulos e instituições de autoria**, buscando identificar padrões entre **artigos mais e menos citados**.
 
-O notebook e script realizam um fluxo completo de **pré-processamento, tradução, engenharia de atributos, análise exploratória e modelagem com SVM (Support Vector Machine)**.
+O notebook e script realizam um fluxo completo de **pré-processamento, tradução, engenharia de atributos, análise exploratória e modelagem com SVM (Support Vector Machine)** e ajuste de hiperparâmetros.
 
 ---
 
-## 🚀 Roteiro do Pipeline
+##  Roteiro do Pipeline
 
 > **Dados crus → Limpeza inicial + Feature Engineering → EDA → Modelagem**
 
 ---
 
-## 📦 Estrutura do Projeto
+##  Estrutura do Projeto
 
 ```text
 modelo_classificação_citações.py
@@ -32,9 +32,9 @@ modelo_classificação_citações.py
 └── Exportação do dataset final (`df_final.csv`)
 ```
 
-# 🧰 Requisitos
+#  Requisitos
 
-## 📚 Bibliotecas principais
+##  Bibliotecas principais
 
 * pandas
 * numpy
@@ -46,13 +46,13 @@ modelo_classificação_citações.py
 * requests
 * ast
 
-## 💾 Instalação
+##  Instalação
 
 ```
 pip install pandas numpy matplotlib seaborn scikit-learn deep-translator tqdm requests
 ```
 
-## 📊 Descrição dos dados
+##  Descrição dos dados
 
 
 Cada registro representa um artigo publicado no SBIE, contendo:
@@ -63,7 +63,7 @@ Cada registro representa um artigo publicado no SBIE, contendo:
 * afiliacoes — Lista de instituições associadas aos autores
 * ano — Ano de publicação
 
-# ⚙️ Etapas do Processamento
+#  Etapas do Processamento
 ## 1. Limpeza de dados
 
 * Remoção de registros sem resumo.
@@ -103,3 +103,11 @@ Cada registro representa um artigo publicado no SBIE, contendo:
 * Modelo: SVM (RBF kernel, C=20, γ=0.1).
 
 Avaliação: Acurácia.
+69.66%
+
+## 6. Ajustes nos Hiperparâmetros
+
+* SVM: C, gamma, kernel
+* RandomForest: n_estimators, max_depth, min_samples_leaf
+* MLP: hidden_layers_size, activation, solver
+* Decision Tree: max_depth, min_samples_split, criterion
